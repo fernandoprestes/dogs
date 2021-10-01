@@ -33,7 +33,7 @@ export const UserStorage = ({ children }) => {
       const { token } = await response.json()
       window.localStorage.setItem('token', token)
       await getUser(token)
-      navigate('/conta')
+      navigate('/user')
     } catch (err) {
       setError(err.message)
       setLogin(false)
