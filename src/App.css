@@ -85,7 +85,6 @@ button, input{
   }
 }
 
-
 .App{
   display: flex;
   flex-direction: column;
@@ -94,4 +93,8 @@ button, input{
 
 .AppBody{
   flex: 1;
+}
+
+.VictoryContainer{
+  height: initial !important;
 }
