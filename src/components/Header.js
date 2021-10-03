@@ -13,7 +13,7 @@ const Header = () => {
           <Dogs />
         </Link>
         {data ? (
-          <Link className={styles.login} to="/conta">
+          <Link className={styles.login} to="/user">
             {data.username}
           </Link>
         ) : (
