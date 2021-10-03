@@ -18,9 +18,9 @@ const Login = () => {
       <div className={styles.forms}>
         <Routes>
           <Route path="/" element={<LoginForm />} />
-          <Route path="create-account" element={<LoginCreate />} />
-          <Route path="lost-password" element={<LoginPasswordLost />} />
-          <Route path="reset-password" element={<LoginPasswordReset />} />
+          <Route path="/create-account" element={<LoginCreate />} />
+          <Route path="/lost-password" element={<LoginPasswordLost />} />
+          <Route path="/resetar" element={<LoginPasswordReset />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </div>
