@@ -12,7 +12,13 @@ const PhotoContent = ({ data, single }) => {
   return (
     <div className={`${styles.photo} ${single ? styles.single : ''}`}>
       <div className={styles.img}>
-        <Image src={photo.src} alt={photo.title}/>
+        {single ? (
+          <Image src={photo.src} alt={photo.title} />
+        ) : (
+          <Link to={`/photo/${photo.id}`}>
+            <Image src={photo.src} alt={photo.title} />
+          </Link>
+        )}
       </div>
 
       <div className={styles.details}>
